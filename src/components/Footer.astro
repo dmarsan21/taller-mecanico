@@ -1,0 +1,76 @@
+---
+import { siteConfig, defaultWhatsApp } from "../data/siteConfig";
+---
+
+<!-- FOOTER CORPORATIVO (LIGHT MODE INDUSTRIAL CLEAN) -->
+<footer class="border-t border-zinc-200/80 bg-white py-16 text-zinc-600 text-xs sm:text-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 rounded-lg bg-zinc-900 text-amber-400 flex items-center justify-center font-bold">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 2v4" />
+              <path d="M12 22v-4" />
+            </svg>
+          </div>
+          <span class="font-extrabold text-zinc-900 text-base tracking-tight">TORQUE PRECISION</span>
+        </div>
+        <p class="text-zinc-500 text-xs leading-relaxed mb-4">
+          Taller mecánico automotriz especializado en diagnóstico computarizado, afinación mayor y mantenimiento de precisión con respaldo legal y piezas originales.
+        </p>
+        <span class="text-zinc-400 text-[11px] font-mono">RFC: {siteConfig.rfc}</span>
+      </div>
+
+      <div>
+        <span class="text-xs uppercase tracking-wider text-zinc-900 font-bold block mb-4">Servicios</span>
+        <ul class="space-y-2.5 text-xs text-zinc-600">
+          <li><a href="#servicios" class="hover:text-zinc-950 transition-colors">Afinación Mayor y Diagnóstico OEM</a></li>
+          <li><a href="#servicios" class="hover:text-zinc-950 transition-colors">Frenos Cerámicos & Rectificado</a></li>
+          <li><a href="#servicios" class="hover:text-zinc-950 transition-colors">Climatización A/C & Fugas UV</a></li>
+          <li><a href="#servicios" class="hover:text-zinc-950 transition-colors">Mantenimiento Preventivo 10k-100k</a></li>
+          <li><a href="#servicios" class="hover:text-zinc-950 transition-colors">Programación de Módulos ECU</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="text-xs uppercase tracking-wider text-zinc-900 font-bold block mb-4">Garantías & CRO</span>
+        <ul class="space-y-2.5 text-xs text-zinc-600">
+          <li><a href="#transparencia" class="hover:text-zinc-950 transition-colors">Presupuesto Blindado por Escrito</a></li>
+          <li><a href="#transparencia" class="hover:text-zinc-950 transition-colors">Devolución de Piezas Viejas</a></li>
+          <li><a href="#transparencia" class="hover:text-zinc-950 transition-colors">Póliza Legal 12 Meses</a></li>
+          <li><a href="#transparencia" class="hover:text-zinc-950 transition-colors">Bitácora en Fotos por WhatsApp</a></li>
+          <li><a href="#marcas" class="hover:text-zinc-950 transition-colors">Marcas Atendidas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="text-xs uppercase tracking-wider text-zinc-900 font-bold block mb-4">Atención & Citas</span>
+        <p class="text-xs text-zinc-500 leading-relaxed mb-4">
+          {siteConfig.address}
+        </p>
+        <a
+          href={defaultWhatsApp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-xs font-bold text-amber-700 hover:text-amber-800 transition-colors"
+        >
+          <span>Chatear con un Asesor Técnico</span>
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="pt-8 border-t border-zinc-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+      <p>© {new Date().getFullYear()} Torque Precision Motors. Todos los derechos reservados.</p>
+      <div class="flex items-center gap-6 text-[11px]">
+        <a href="#" class="hover:text-zinc-950 transition-colors">Aviso de Privacidad</a>
+        <a href="#" class="hover:text-zinc-950 transition-colors">Términos de Servicio</a>
+        <a href="#" class="hover:text-zinc-950 transition-colors">Póliza de Garantía</a>
+      </div>
+    </div>
+  </div>
+</footer>

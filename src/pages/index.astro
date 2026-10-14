@@ -1,16 +1,91 @@
 ---
+import "../styles/global.css";
+import { schemaData } from "../data/siteConfig";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import MetricsBar from "../components/MetricsBar.astro";
+import Services from "../components/Services.astro";
+import Transparency from "../components/Transparency.astro";
+import CarBrands from "../components/CarBrands.astro";
+import Testimonials from "../components/Testimonials.astro";
+import FinalCTA from "../components/FinalCTA.astro";
+import Footer from "../components/Footer.astro";
+import FloatingWhatsApp from "../components/FloatingWhatsApp.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!doctype html>
+<html lang="es" class="scroll-smooth bg-[#f8f9fa] text-zinc-900">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags Primarios -->
+    <title>Torque Precision Motors | Taller Mecánico Especializado & Diagnóstico Computarizado</title>
+    <meta
+      name="description"
+      content="Taller mecánico automotriz en CDMX. Diagnóstico computarizado nivel agencia, afinación mayor, frenos cerámicos y mantenimiento OEM con presupuesto cerrado por escrito y garantía de 12 meses."
+    />
+    <meta name="keywords" content="taller mecanico cdmx, afinacion mayor, diagnostico por escaner, frenos ceramicos, mantenimiento preventivo automotriz, torque precision motors" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://torqueprecisionmotors.mx" />
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://torqueprecisionmotors.mx" />
+    <meta property="og:title" content="Torque Precision Motors | Cuidado Mecánico con Precisión de Agencia" />
+    <meta
+      property="og:description"
+      content="Diagnóstico computarizado exacto antes de tocar tu motor. Presupuesto cerrado, refacciones originales y garantía por escrito."
+    />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Torque Precision Motors" />
+    <meta property="og:image" content="https://torqueprecisionmotors.mx/images/hero-agency-workshop.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Torque Precision Motors | Taller Automotriz Especializado" />
+    <meta
+      name="twitter:description"
+      content="Mecánica de precisión sin cobros sorpresa. Cotiza tu diagnóstico por escáner con entrega el mismo día."
+    />
+    <meta name="twitter:image" content="https://torqueprecisionmotors.mx/images/hero-agency-workshop.jpg" />
+
+    <!-- Local SEO Geo Tags -->
+    <meta name="geo.region" content="MX-CMX" />
+    <meta name="geo.placename" content="Ciudad de México" />
+    <meta name="geo.position" content="19.3725;-99.1789" />
+    <meta name="ICBM" content="19.3725, -99.1789" />
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org JSON-LD (AutoRepair) -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </head>
+
+  <body class="min-h-screen bg-[#f8f9fa] text-zinc-900 antialiased selection:bg-amber-500/20 selection:text-zinc-950 overflow-x-hidden">
+    <Navbar />
+
+    <main>
+      <Hero />
+      <MetricsBar />
+      <Services />
+      <Transparency />
+      <CarBrands />
+      <Testimonials />
+      <FinalCTA />
+    </main>
+
+    <Footer />
+    <FloatingWhatsApp />
+  </body>
 </html>

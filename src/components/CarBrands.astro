@@ -1,0 +1,35 @@
+---
+import { carBrands } from "../data/siteConfig";
+---
+
+<!-- MARCAS Y ESPECIALIDAD TÉCNICA -->
+<section id="marcas" class="py-16 sm:py-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center max-w-2xl mx-auto mb-12">
+    <span class="text-xs uppercase tracking-widest text-amber-600 font-bold block mb-2 font-mono">
+      / COBERTURA MULTIMARCA CERTIFICADA /
+    </span>
+    <h2 class="text-2xl sm:text-4xl font-extrabold text-zinc-900">
+      Tecnología de escaneo compatible con marcas líderes
+    </h2>
+    <p class="text-zinc-600 text-sm mt-2">
+      Tablas de calibración oficiales, diagramas eléctricos OEM y herramientas específicas para cada motor.
+    </p>
+  </div>
+
+  <!-- Tarjetas de Marcas Atendidas con Logo Oficial y Estilo Premium -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 sm:gap-4 max-w-5xl mx-auto">
+    {carBrands.map((brand) => (
+      <div class="p-4 sm:p-5 rounded-2xl bg-white border border-zinc-200/80 shadow-xs hover:border-amber-500/50 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 flex flex-col items-center justify-center text-center gap-2.5 group cursor-default">
+        <div class="h-10 flex items-center justify-center group-hover:scale-110 transition-transform duration-200" set:html={brand.svg} />
+        <div class="flex flex-col items-center">
+          <span class="text-xs sm:text-sm font-bold text-zinc-900 group-hover:text-amber-600 transition-colors">
+            {brand.name}
+          </span>
+          <span class="text-[10px] text-zinc-400 font-medium">
+            {brand.country}
+          </span>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

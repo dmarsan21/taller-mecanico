@@ -1,0 +1,334 @@
+---
+import { Image } from "astro:assets";
+import { afinacionWhatsApp, frenosWhatsApp, acWhatsApp, preventivoWhatsApp } from "../data/siteConfig";
+---
+
+<!-- 3. SERVICIOS EN BENTO GRID ASIMÉTRICO CON IMÁGENES FOTOGRÁFICAS -->
+<section id="servicios" class="py-16 sm:py-24 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+  <!-- Encabezado Editorial de Sección -->
+  <div class="max-w-3xl mb-14 sm:mb-16">
+    <span class="text-xs uppercase tracking-widest text-amber-600 font-bold block mb-2.5 font-mono">
+      / INGENIERÍA AUTOMOTRIZ DE PRECISIÓN /
+    </span>
+    <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-zinc-900 mb-4">
+      Servicios especializados sin margen para la improvisación.
+    </h2>
+    <p class="text-zinc-600 text-base sm:text-lg leading-relaxed">
+      Equipamiento de diagnóstico electrónico nivel concesionario oficial para detectar la causa raíz en minutos, protegiendo el desempeño y valor de tu vehículo.
+    </p>
+  </div>
+
+  <!-- BENTO GRID -->
+  <div id="tecnologia" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+    <!-- TARJETA DOMINANTE 1: Afinación Mayor y Diagnóstico Computarizado (col-span-8) CON IMAGEN -->
+    <article class="lg:col-span-8 p-8 sm:p-10 rounded-3xl bg-white border border-zinc-200/80 shadow-sm hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300 transition-all duration-300 relative overflow-hidden flex flex-col justify-between">
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold uppercase tracking-wider">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            Servicio Insignia • 4 a 6 Horas
+          </span>
+          <span class="text-xs text-zinc-500 font-medium">Reporte digital con fotos en WhatsApp</span>
+        </div>
+
+        <!-- Imagen de Diagnóstico Computarizado -->
+        <div class="relative rounded-2xl overflow-hidden mb-6 border border-zinc-200/80 shadow-sm group">
+          <Image
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+            alt="Diagnóstico por escáner de alta tecnología y calibración de motor"
+            width={800}
+            height={380}
+            loading="lazy"
+            class="w-full h-48 sm:h-56 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute bottom-3 left-3 bg-zinc-900/85 backdrop-blur-md px-3 py-1 rounded-lg text-[11px] font-mono text-amber-300 border border-white/10">
+            SCANNER OEM AUTEL & BOSCH MAXISYS
+          </div>
+        </div>
+
+        <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 mb-3">
+          Afinación Mayor & Diagnóstico Computarizado OEM
+        </h3>
+
+        <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6 max-w-2xl">
+          Escaneo integral de más de 120 parámetros dinámicos con escáneres Autel y Bosch MaxiSys. Calibramos la mezcla estequiométrica, restauramos la aceleración original y reducimos drásticamente el consumo de combustible.
+        </p>
+
+        <!-- Micro-detalles y Especificaciones Técnicas -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div class="flex items-start gap-3">
+            <div class="mt-0.5 flex-shrink-0 w-6 h-6 rounded-lg bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <span class="text-sm font-bold text-zinc-900 block">Laboratorio de Inyectores</span>
+              <span class="text-xs text-zinc-500">Lavado por ultrasonido y microaspersión en probeta.</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="mt-0.5 flex-shrink-0 w-6 h-6 rounded-lg bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <span class="text-sm font-bold text-zinc-900 block">Bujías de Iridium / Platino</span>
+              <span class="text-xs text-zinc-500">Grado térmico original y calibración micrométrica.</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="mt-0.5 flex-shrink-0 w-6 h-6 rounded-lg bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <span class="text-sm font-bold text-zinc-900 block">Cuerpo de Aceleración</span>
+              <span class="text-xs text-zinc-500">Descarbonización y reaprendizaje de ralentí.</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="mt-0.5 flex-shrink-0 w-6 h-6 rounded-lg bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <span class="text-sm font-bold text-zinc-900 block">Prueba de Compresión</span>
+              <span class="text-xs text-zinc-500">Dictamen de válvulas y anillos con manómetro.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mockup Telemetría de Diagnóstico Digital -->
+        <div class="p-4 sm:p-5 rounded-2xl bg-zinc-950 text-white mb-6 font-mono border border-zinc-800 shadow-inner">
+          <div class="flex items-center justify-between text-xs text-zinc-400 border-b border-zinc-800 pb-2.5 mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="text-zinc-200 font-bold">ECU TELEMETRY: PROTOCOLO CAN-FD</span>
+            </div>
+            <span class="text-amber-400 text-[11px] font-semibold">SALUD GENERAL: 98.4%</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+            <div class="bg-zinc-900/80 p-2.5 rounded-xl border border-zinc-800">
+              <span class="text-[10px] text-zinc-400 block uppercase">Inyección</span>
+              <span class="text-emerald-400 font-bold">14.7:1 Lambda</span>
+            </div>
+            <div class="bg-zinc-900/80 p-2.5 rounded-xl border border-zinc-800">
+              <span class="text-[10px] text-zinc-400 block uppercase">Compresión</span>
+              <span class="text-zinc-200 font-bold">175 PSI Avg</span>
+            </div>
+            <div class="bg-zinc-900/80 p-2.5 rounded-xl border border-zinc-800">
+              <span class="text-[10px] text-zinc-400 block uppercase">Sensor O2</span>
+              <span class="text-emerald-400 font-bold">Respuesta 85ms</span>
+            </div>
+            <div class="bg-zinc-900/80 p-2.5 rounded-xl border border-zinc-800">
+              <span class="text-[10px] text-zinc-400 block uppercase">Temp. Motor</span>
+              <span class="text-zinc-200 font-bold">89°C Estable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-5 border-t border-zinc-100">
+        <span class="text-xs text-zinc-500">Incluye refacciones OEM certificadas y lavado de motor en seco.</span>
+        <a
+          href={afinacionWhatsApp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto h-11 px-5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-sm transition-colors"
+        >
+          <span>Cotizar Afinación Mayor</span>
+          <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- TARJETA COMPLEMENTARIA 2: Frenos y Suspensión (col-span-4) CON IMAGEN -->
+    <article class="lg:col-span-4 p-8 rounded-3xl bg-white border border-zinc-200/80 shadow-sm hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300 transition-all duration-300 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between gap-2 mb-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider">
+            Seguridad Crítica
+          </span>
+          <span class="text-xs text-zinc-400">Inspección rampa</span>
+        </div>
+
+        <!-- Imagen Frenos Cerámicos -->
+        <div class="relative rounded-2xl overflow-hidden mb-5 border border-zinc-200/80 shadow-sm group">
+          <Image
+            src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80"
+            alt="Rectificado de discos, balatas cerámicas y suspensión"
+            width={800}
+            height={420}
+            loading="lazy"
+            class="w-full h-40 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+
+        <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 mb-3">
+          Frenos de Alto Rendimiento & Suspensión
+        </h3>
+
+        <p class="text-zinc-600 text-sm leading-relaxed mb-6">
+          Frenado inmediato, silencioso y seguro sin vibraciones al volante ni ruidos molestos.
+        </p>
+
+        <ul class="space-y-3 mb-6 text-xs sm:text-sm text-zinc-700">
+          <li class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            <span>Balatas cerámicas de ultra-bajo residuo de polvo.</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            <span>Rectificado computarizado micrométrico.</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            <span>Purga de líquido DOT 4 / 5.1 con equipo hidroneumático.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pt-5 border-t border-zinc-100">
+        <a
+          href={frenosWhatsApp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full h-11 px-4 rounded-xl bg-zinc-100 hover:bg-zinc-200 text-zinc-900 font-semibold text-xs flex items-center justify-center gap-2 transition-colors border border-zinc-200/80"
+        >
+          <span>Revisar Frenos & Suspensión</span>
+          <svg class="w-3.5 h-3.5 text-zinc-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- TARJETA COMPLEMENTARIA 3: Sistema Eléctrico & A/C (col-span-4) CON IMAGEN -->
+    <article class="lg:col-span-4 p-8 rounded-3xl bg-white border border-zinc-200/80 shadow-sm hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300 transition-all duration-300 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between gap-2 mb-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-bold uppercase tracking-wider">
+            Confort & Telemetría
+          </span>
+          <span class="text-xs text-zinc-400">Gas R134a/R1234yf</span>
+        </div>
+
+        <!-- Imagen A/C y Eléctrico -->
+        <div class="relative rounded-2xl overflow-hidden mb-5 border border-zinc-200/80 shadow-sm group">
+          <Image
+            src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80"
+            alt="Diagnóstico de aire acondicionado y módulos electrónicos"
+            width={800}
+            height={420}
+            loading="lazy"
+            class="w-full h-40 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+
+        <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 mb-3">
+          Climatización A/C & Sistema Eléctrico
+        </h3>
+
+        <p class="text-zinc-600 text-sm leading-relaxed mb-6">
+          Aire helado y electrónica sin fallas fantasma ni descargas de batería.
+        </p>
+
+        <ul class="space-y-3 mb-6 text-xs sm:text-sm text-zinc-700">
+          <li class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            <span>Detección de microfugas con contraste UV.</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            <span>Recarga con lubricante sintético PAG.</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            <span>Prueba inductiva de alternador y baterías AGM.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pt-5 border-t border-zinc-100">
+        <a
+          href={acWhatsApp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full h-11 px-4 rounded-xl bg-zinc-100 hover:bg-zinc-200 text-zinc-900 font-semibold text-xs flex items-center justify-center gap-2 transition-colors border border-zinc-200/80"
+        >
+          <span>Diagnosticar A/C o Eléctrico</span>
+          <svg class="w-3.5 h-3.5 text-zinc-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- TARJETA DOMINANTE ASIMÉTRICA 4: Mantenimiento Preventivo (col-span-8) CON IMAGEN -->
+    <article class="lg:col-span-8 p-8 sm:p-10 rounded-3xl bg-white border border-zinc-200/80 shadow-sm hover:shadow-xl hover:shadow-zinc-900/5 hover:border-zinc-300 transition-all duration-300 flex flex-col justify-between">
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            Entrega El Mismo Día • Manual de Fabricante
+          </span>
+          <span class="text-xs text-zinc-500 font-medium">10k • 30k • 60k • 100k km</span>
+        </div>
+
+        <!-- Imagen de Mantenimiento Preventivo -->
+        <div class="relative rounded-2xl overflow-hidden mb-6 border border-zinc-200/80 shadow-sm group">
+          <Image
+            src="https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=800&q=80"
+            alt="Mantenimiento preventivo oficial y lubricantes sintéticos"
+            width={800}
+            height={380}
+            loading="lazy"
+            class="w-full h-48 sm:h-56 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute bottom-3 left-3 bg-zinc-900/85 backdrop-blur-md px-3 py-1 rounded-lg text-[11px] font-mono text-emerald-400 border border-white/10">
+            LUBRICACIÓN SINTÉTICA CERTIFICADA API SP / ILSAC GF-6
+          </div>
+        </div>
+
+        <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-900 mb-4">
+          Mantenimiento Preventivo por Kilometraje
+        </h3>
+
+        <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6 max-w-2xl">
+          Rutinas oficiales para conservar el valor de reventa de tu auto y evitar costosas averías futuras. Utilizamos lubricantes 100% sintéticos con certificación API SP / ILSAC GF-6 y especificaciones europeas (BMW Longlife, VW 504/507, Mercedes-Benz 229.5).
+        </p>
+
+        <!-- Insignias de confianza en Light Mode -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+          <div class="p-3.5 rounded-2xl bg-zinc-50 border border-zinc-200/80 text-center">
+            <span class="text-xs font-bold text-zinc-900 block mb-0.5">Sintético OEM</span>
+            <span class="text-[11px] text-zinc-500">Mobil 1 / Motul</span>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-zinc-50 border border-zinc-200/80 text-center">
+            <span class="text-xs font-bold text-zinc-900 block mb-0.5">Checklist 45 Pts</span>
+            <span class="text-[11px] text-zinc-500">Revisión de seguridad</span>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-zinc-50 border border-zinc-200/80 text-center">
+            <span class="text-xs font-bold text-zinc-900 block mb-0.5">Rotación & Torque</span>
+            <span class="text-[11px] text-zinc-500">Ajuste calibrado</span>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-zinc-50 border border-zinc-200/80 text-center">
+            <span class="text-xs font-bold text-zinc-900 block mb-0.5">Reporte Digital</span>
+            <span class="text-[11px] text-zinc-500">PDF con fotos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-5 border-t border-zinc-100">
+        <span class="text-xs text-zinc-500">¿No sabes qué servicio le toca a tu auto? Consulta con un asesor técnico.</span>
+        <a
+          href={preventivoWhatsApp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto h-11 px-5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-sm transition-colors"
+        >
+          <span>Agendar Mantenimiento Preventivo</span>
+          <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>

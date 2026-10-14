@@ -1,0 +1,139 @@
+---
+import { urgenciaWhatsApp } from "../data/siteConfig";
+---
+
+<!-- 2. HERO SECTION EDITORIAL DE ANCHO COMPLETO (FULL-WIDTH & FULL-HEIGHT) -->
+<section class="relative w-full min-h-[calc(100dvh-5rem)] overflow-hidden bg-zinc-950 mb-16 sm:mb-20 flex items-center">
+  
+  <!-- Fondo de Taller Mecánico Nivel Agencia a Ancho Completo -->
+  <img
+    src="/images/hero-agency-workshop.jpg"
+    alt="Técnicos certificados realizando diagnóstico automotriz en taller de agencia Torque Precision Motors"
+    width="1920"
+    height="1080"
+    loading="eager"
+    fetchpriority="high"
+    class="absolute inset-0 w-full h-full object-cover object-[center_35%] pointer-events-none z-0"
+  />
+
+  <!-- Capas de Gradiente Cinemático: Máxima legibilidad a la izquierda y transparencia para lucir el taller -->
+  <div class="absolute inset-0 bg-linear-to-r from-neutral-950/95 via-neutral-950/80 to-neutral-950/40 pointer-events-none z-1"></div>
+  <div class="absolute inset-0 bg-linear-to-t from-neutral-950/90 via-transparent to-neutral-950/40 pointer-events-none z-1"></div>
+
+  <!-- Contenedor Centralizado de Contenido -->
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 lg:gap-12">
+    
+    <!-- LADO IZQUIERDO: Titular Monumental y Propuesta de Valor -->
+    <div class="max-w-2xl text-left">
+      <!-- Badge Superior -->
+      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-white text-xs font-semibold mb-6 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        <span class="text-amber-400 font-bold uppercase tracking-wider font-mono">Taller Nivel Concesionario</span>
+        <span class="text-white/40">•</span>
+        <span class="text-neutral-200">Diagnóstico Computarizado OEM</span>
+      </div>
+
+      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight uppercase leading-[0.92] mb-6 drop-shadow-md">
+        <span class="text-white block">Precision</span>
+        <span class="text-white/45 block">Crafted</span>
+        <span class="text-white block">Performance.</span>
+      </h1>
+
+      <!-- Párrafo Editorial -->
+      <p class="text-neutral-200 text-sm sm:text-base font-normal max-w-lg leading-relaxed mb-8 drop-shadow-sm">
+        Diagnóstico computarizado de nivel concesionario, afinación de alta ingeniería y calibración micrométrica con presupuesto cerrado garantizado.
+      </p>
+
+      <!-- Social Proof Pill y Botón Secundario -->
+      <div class="flex flex-wrap items-center gap-4">
+        <a
+          href="#servicios"
+          class="inline-flex items-center gap-2.5 h-11 px-6 rounded-full bg-amber-500 hover:bg-amber-400 text-zinc-950 text-xs sm:text-sm font-bold shadow-lg shadow-amber-500/20 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] group"
+        >
+          <span>Explorar Servicios</span>
+          <svg class="w-4 h-4 text-zinc-950 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+
+        <div class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-black/50 backdrop-blur-md border border-white/15 text-white text-xs shadow-md">
+          <span class="text-amber-400 font-extrabold flex items-center gap-1">★ 4.9</span>
+          <span class="text-white/80">de 1,800+ intervenciones garantizadas</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LADO DERECHO: Tarjeta Flotante de Vidrio / Booking Card -->
+    <div class="w-full sm:w-87.5 rounded-2xl bg-neutral-900/85 backdrop-blur-xl border border-white/20 p-6 shadow-2xl flex flex-col gap-4 text-white hover:border-amber-400/40 transition-all duration-300">
+      
+      <!-- Título del Widget con icono sutil -->
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-base font-bold tracking-tight text-white">Torque Express</h2>
+          <span class="text-xs text-neutral-400">Diagnóstico & Calibración</span>
+        </div>
+        <div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-amber-400">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9"/>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Inputs Simulados Tipo WoodNest -->
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 flex flex-col">
+          <span class="text-[10px] text-neutral-400">📅 Cita</span>
+          <span class="font-semibold text-white mt-0.5">Hoy Inmediato</span>
+        </div>
+        <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 flex flex-col">
+          <span class="text-[10px] text-neutral-400">⚡ Servicio</span>
+          <span class="font-semibold text-white mt-0.5">Escáner 3D</span>
+        </div>
+      </div>
+
+      <!-- Tiempos de Entrega -->
+      <div class="flex items-center justify-between text-xs text-neutral-300 border-t border-white/10 pt-3">
+        <div>
+          <span class="text-[10px] text-neutral-400 block">Recepción</span>
+          <span class="font-medium text-white">8:00 AM - 6:30 PM</span>
+        </div>
+        <div class="text-right">
+          <span class="text-[10px] text-neutral-400 block">Garantía</span>
+          <span class="font-medium text-emerald-400">12 Meses Escrita</span>
+        </div>
+      </div>
+
+      <!-- Precio y Estado -->
+      <div class="flex items-baseline justify-between pt-2">
+        <div>
+          <span class="text-2xl font-black text-white">$0</span>
+          <span class="text-xs text-neutral-400"> / escaneo inicial*</span>
+        </div>
+        <span class="text-[11px] text-emerald-400 font-semibold px-2.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/30">
+          3 cupos hoy
+        </span>
+      </div>
+
+      <!-- Botón WhatsApp Verde de Alto Impacto -->
+      <a
+        href={urgenciaWhatsApp}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full h-12 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-sm flex items-center justify-center gap-2.5 shadow-lg shadow-[#25D366]/30 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] group"
+      >
+        <svg class="w-5 h-5 fill-white shrink-0" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.97.535 1.77.82 2.791.82 3.181 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.767-5.767-5.767zm7.969 5.766c-.002 4.398-3.578 7.973-7.97 7.973-1.393 0-2.705-.363-3.85-1.002l-4.18 1.096 1.117-4.084c-.722-1.2-1.087-2.588-1.087-3.983.003-4.398 3.578-7.973 7.971-7.973 4.392 0 7.969 3.575 7.969 7.973z"/>
+        </svg>
+        <span>Cotizar por WhatsApp</span>
+        <svg class="w-4 h-4 text-white/90 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+</section>
