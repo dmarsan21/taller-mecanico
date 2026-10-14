@@ -5,7 +5,7 @@ import { siteConfig, urgenciaWhatsApp } from "../data/siteConfig";
 
 <!-- 5. LLAMADO A LA ACCIÓN FINAL CON IMAGEN DE FONDO ATMOSFÉRICA -->
 <section id="contacto" class="py-20 sm:py-28 relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div class="relative rounded-[2.5rem] overflow-hidden bg-zinc-950 p-8 sm:p-14 lg:p-16 text-center shadow-2xl text-white border border-zinc-800">
+  <div class="relative rounded-[2.5rem] overflow-hidden bg-zinc-950 p-6 sm:p-14 lg:p-16 text-center shadow-2xl text-white border border-zinc-800">
     
     <!-- Imagen de Fondo Cinemática para el CTA Final -->
     <Image
@@ -22,12 +22,12 @@ import { siteConfig, urgenciaWhatsApp } from "../data/siteConfig";
 
     <div class="relative z-10">
       <!-- Eyebrow Badge Urgencia -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-6">
-        <span class="relative flex h-2 w-2">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-amber-300 text-[11px] sm:text-xs font-semibold uppercase tracking-wider mb-6 max-w-full">
+        <span class="relative flex h-2 w-2 shrink-0">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
         </span>
-        <span>Atención Inmediata • Diagnóstico en 35 Minutos</span>
+        <span>Atención Inmediata <span class="hidden sm:inline">• Diagnóstico en 35 Minutos</span></span>
       </div>
 
       <!-- Título Contundente de Urgencia -->
@@ -45,14 +45,14 @@ import { siteConfig, urgenciaWhatsApp } from "../data/siteConfig";
           href={urgenciaWhatsApp}
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center justify-center gap-3.5 h-14 sm:h-16 px-8 sm:px-12 rounded-2xl bg-white hover:bg-neutral-100 text-neutral-950 font-black text-base sm:text-lg shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 group"
+          class="inline-flex items-center justify-center gap-2.5 sm:gap-3.5 min-h-12 sm:min-h-16 py-3.5 sm:py-4 px-6 sm:px-10 rounded-2xl bg-white hover:bg-neutral-100 text-neutral-950 font-black text-sm sm:text-base lg:text-lg shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 group max-w-full text-center"
         >
           <!-- WhatsApp SVG -->
-          <svg class="w-6 h-6 fill-current text-emerald-600" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-current text-emerald-600 shrink-0" viewBox="0 0 24 24">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.97.535 1.77.82 2.791.82 3.181 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.767-5.767-5.767zm7.969 5.766c-.002 4.398-3.578 7.973-7.97 7.973-1.393 0-2.705-.363-3.85-1.002l-4.18 1.096 1.117-4.084c-.722-1.2-1.087-2.588-1.087-3.983.003-4.398 3.578-7.973 7.971-7.973 4.392 0 7.969 3.575 7.969 7.973z"/>
           </svg>
-          <span>Agendar Diagnóstico por WhatsApp</span>
-          <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <span class="leading-tight">Agendar por WhatsApp</span>
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 shrink-0 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M5 12h14"/>
             <path d="m12 5 7 7-7 7"/>
           </svg>
